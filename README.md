@@ -170,20 +170,20 @@ python run_gsbs_studyforrest.py
 
 | Section | Contents |
 |---|---|
-| **1. Setup** | Install packages, download data from Google Drive, configure output paths |
-| **2. Parameters** | Dataset selection, all analysis parameters, figure style |
-| **3. Schaefer Atlas** | Load atlas, build network-membership masks for DBSCAN orientation |
+| **1. Setup** | Install dependencies (1.1), download data from Google Drive (1.2), imports (1.3), configure output directories (1.4) |
+| **2. Parameters** | Dataset selection (2.1), analysis parameters (2.2), dataset-specific config (2.3) |
+| **3. Schaefer Atlas** | Load atlas via nilearn, build network-membership masks for DBSCAN orientation |
 | **4. Utility Functions** | NIfTI projection, surface plotting, legend helpers |
-| **5. Hippocampus Data** | Load pre-extracted hippocampal timeseries; subject-level QC plot |
+| **5. Hippocampus Data** | Hippocampal mask info (5.1), load pre-extracted per-subject hippocampal timeseries (5.2), subject-level QC plot (5.3) |
 | **6. Event Boundaries** | Load behavioural boundary annotations; apply 4.5 s HRF lag |
-| **7. Global Brain States** | Load GSBS objects → LOO reliability → DBSCAN grid search → DMN/TPN labelling → state timeseries visualisation |
+| **7. Global Brain States** | Load GSBS objects (7.1) → inspect single subject (7.2) → GSBS quality metrics (7.3) → LOO inter-subject reliability (7.4) → DBSCAN grid search for DMN/TPN labelling (7.5) → state timeseries visualisation (7.6) → save and plot cluster map NIfTIs (7.7) |
 | **8. State Occurrence Statistics** | Proportion of time in DMN vs TPN per subject; Wilcoxon tests |
 | **9. Hippocampus at Event Boundaries** | Event-window averaging of hippocampal activity and global state probability |
-| **10. GLM and FIR Models** | All-boundaries GLM/FIR; state-split GLM/FIR without and with state regressor; global-state GLM/FIR |
-| **11. Memory Analysis** | Sherlock only: memory scores, DMN time vs memory, TPN-at-boundary vs memory, hippocampal activity vs memory, high/low memory subgroup FIR |
+| **10. GLM and FIR Models** | Design matrix timing (10.1); all-boundaries GLM (10.2) and FIR (10.3); assign boundaries to brain states (10.4); state-split GLM (10.5) and FIR (10.6) without state regressor; GLM (10.7) and FIR (10.8) with state as nuisance regressor; global-states GLM (10.9) and FIR (10.10) |
+| **11. Memory Analysis** | Sherlock only: load memory scores and compute remembered-event timelines; memory score plots per subject and per scene; state proportion vs memory correlations (11.1), including outlier-excluded analysis; TPN-at-boundary vs memory and hippocampal activity vs memory scatter plots; high vs low memory subgroup FIR (11.2) |
 | **Appendix** | Note on Wilcoxon z-statistic reporting |
 
-**Estimated runtime (Colab free tier):** Sections 1–9 run in a few minutes. Section 10 (GLM/FIR loops) takes ~1 minute. The DBSCAN grid search in Section 7.5 takes ~5 minutes and is wrapped in `%%time`.
+**Estimated runtime (Colab free tier):** Sections 1–9 run in a few minutes. Section 10 (GLM/FIR loops) takes ~1 minute. The DBSCAN grid search in Section 7.5 takes ~2 minutes for Sherlock and ~10 minutes for StudyForrest.
 
 ---
 

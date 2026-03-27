@@ -3,7 +3,7 @@
 **Memory and Hippocampal Responses to Event Boundaries are Modulated by Global Brain States**
 Gözükara, D., Oetringer, D., Ahmad, N., & Geerligs, L. (2026)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/drgzkr/global-states-event-memory/blob/main/Global_States_Hippocampus_fixed.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/drgzkr/global-states-event-memory/blob/main/Global_Brain_States_and_Hippocampal_Memory.ipynb)
 
 ---
 
@@ -309,6 +309,6 @@ Donders Institute for Brain, Cognition and Behaviour, Radboud University, Nijmeg
 **Memory and Hippocampal Responses to Event Boundaries are Modulated by Global Brain States**
 Gözükara, D., Oetringer, D., Ahmad, N., & Geerligs, L. (2026)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/drgzkr/global-states-event-memory/blob/main/Global_States_Hippocampus_fixed.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/drgzkr/global-states-event-memory/blob/main/Global_Brain_States_and_Hippocampal_Memory.ipynb)
 
 ---

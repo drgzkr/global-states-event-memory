@@ -25,7 +25,7 @@ Using fMRI data from two independent datasets — **Sherlock** (BBC series) and 
 ```
 global-states-event-memory/
 │
-├── Global_States_Hippocampus_Notebook.ipynb   # Main analysis notebook (open in Colab)
+├── Global_Brain_States_and_Hippocampal_Memory.ipynb   # Main analysis notebook (open in Colab)
 ├── run_gsbs_sherlock.py                    # Preprocessing: GSBS on Sherlock dataset
 ├── run_gsbs_studyforrest.py                # Preprocessing: GSBS on StudyForrest dataset
 └── README.md                               # This file
@@ -166,7 +166,7 @@ python run_gsbs_studyforrest.py
 
 ## Analysis Notebook
 
-`UPDATE_NAME.ipynb` is the single notebook that reproduces all main figures and statistical results in the paper. It is structured as follows:
+`Global_Brain_States_and_Hippocampal_Memory.ipynb` is the single notebook that reproduces all main figures and statistical results in the paper. It is structured as follows:
 
 | Section | Contents |
 |---|---|

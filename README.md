@@ -11,12 +11,12 @@ Gözükara, D., Oetringer, D., Ahmad, N., & Geerligs, L. (2026)
 
 Our experiences unfold continuously, yet we remember them as discrete episodes. This repository contains all code to reproduce the analyses in the paper above, which examines how **large-scale brain state dynamics modulate hippocampal memory encoding at event boundaries** during naturalistic movie-watching.
 
-Using fMRI data from two independent datasets — **Sherlock** (BBC series) and **StudyForrest** (Forrest Gump) — we show that:
+Using fMRI data from two independent datasets **Sherlock** (BBC series) and **StudyForrest** (Forrest Gump) we show that:
 
 1. Event boundaries are associated with an increased probability of being in a **Task-Positive Network (TPN)** global brain state.
 2. Hippocampal activity is systematically higher during **TPN** states than during **Default Mode Network (DMN)** states.
 3. The hippocampal response to event boundaries appears largest during TPN states, but is present in both states once baseline differences are controlled for.
-4. Individual differences in the tendency to **shift toward the TPN at event boundaries**, and overall time spent in the DMN, predict **subsequent memory** for narrative content — while univariate hippocampal activity at boundaries does not.
+4. Individual differences in the tendency to **shift toward the TPN at event boundaries**, and overall time spent in the DMN, predict **subsequent memory** for narrative content while univariate hippocampal activity at boundaries does not.
 
 ---
 
@@ -93,7 +93,7 @@ To regenerate the GSBS objects from raw fMRI data, see [Preprocessing](#preproce
 
 The **Schaefer 400-ROI** cortical parcellation (7 Yeo networks) is used throughout. It is fetched automatically by `nilearn` — no manual download needed.
 
-- [ ] The **hippocampal mask** is derived from the WFU PickAtlas toolbox (Maldjian et al., 2003), resampled to match each participant's MNI-space data. A template mask is included in the data folder.
+- The **hippocampal mask** is derived from the WFU PickAtlas toolbox (Maldjian et al., 2003), resampled to match each participant's MNI-space data. A template mask is included in the data folder.
 
 ---
 
@@ -303,7 +303,7 @@ Code is released under the [MIT License](LICENSE). Pre-computed data files follo
 
 ## Contact
 
-Dora Gözükara — [d.gozukara@donders.ru.nl](mailto:d.gozukara@donders.ru.nl)
+Dora Gözükara — [dora.gozukara@donders.ru.nl](mailto:dora.gozukara@donders.ru.nl)
 Donders Institute for Brain, Cognition and Behaviour, Radboud University, Nijmegen, Netherlands# Global Brain States and Hippocampal Memory
 
 **Memory and Hippocampal Responses to Event Boundaries are Modulated by Global Brain States**
